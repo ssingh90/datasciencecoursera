@@ -68,3 +68,4 @@ all4 <- group_by(all3, subject, activity_name)
 
 
 tidy_data <- all4 %>% summarise_each(funs(mean))
+write.table(tidy_data, "c:/Users//sanskriti/Documents/coursera/tidy_data.txt",quote=F, row.names=F);
